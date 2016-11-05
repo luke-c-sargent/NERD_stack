@@ -1,0 +1,19 @@
+{
+  "name": "nerd_stack",
+  "version": "0.0.0",
+  "description": "node express react database stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luke-c-sargent/NERD_stack.git"
+  },
+  "author": "Luke Sargent",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luke-c-sargent/NERD_stack/issues"
+  },
+  "homepage": "https://github.com/luke-c-sargent/NERD_stack#readme"
+}
