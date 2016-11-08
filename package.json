@@ -4,6 +4,10 @@
   "description": "node express react database stack",
   "main": "index.js",
   "scripts": {
+    "start": "node ./build/index.js",
+    "clean": "rm -rf build && mkdir build",
+    "transpile":"babel -d ./build ./src --presets react",
+    "serve":"node build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/luke-c-sargent/NERD_stack/issues"
   },
-  "homepage": "https://github.com/luke-c-sargent/NERD_stack#readme"
+  "homepage": "https://github.com/luke-c-sargent/NERD_stack#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
