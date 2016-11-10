@@ -4,10 +4,11 @@
   "description": "node express react database stack",
   "main": "index.js",
   "scripts": {
-    "start": "node ./build/index.js",
+    "start": "node ./build/server.js",
+    "babelwatch": "babel-watch ./src/server.js",
     "clean": "rm -rf build && mkdir build",
-    "transpile":"babel -d ./build ./src --presets react",
-    "serve":"node build/index.js",
+    "transpile": "babel -d ./build ./src --presets react",
+    "build": "node run clean && node run transpile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +22,9 @@
   },
   "homepage": "https://github.com/luke-c-sargent/NERD_stack#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "express-react-views": "^0.10.2",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
   }
 }

@@ -4,7 +4,9 @@ var _Site = require('./components/Site');
 
 var _Site2 = _interopRequireDefault(_Site);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+	return obj && obj.__esModule ? obj : { default: obj };
+}
 
 var express = require('express');
 var app = express();
